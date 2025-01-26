@@ -42,7 +42,7 @@ git commit -m "Initial commit with README"
 2. Fill in the details as follows:
 
     * Repository Name: `go-hello-world-project`
-    * Description: "Hello World Go Program
+    * Description: "Hello World Go Program"
     * Visibility: Public
     * Click `Create Repository`
 
@@ -79,10 +79,10 @@ git push --set-upstream origin main
 }
 ```
 `devcontainer.json` files follow the above format.
-**`"name"` names the dev container. This name can be seen when the dev container is running.
-**`image` indicates the development environment that will be used
-**`extensions` installs the necessary extensions inside the dev container for the correct environment
-**`postCreateCommand` runs the command specified after it right after the dev container is created
+    * `name` names the dev container. This name can be seen when the dev container is running.
+    * `image` indicates the development environment that will be used
+    * `extensions` installs the necessary extensions inside the dev container for the correct environment
+    * `postCreateCommand` runs the specified command right after the dev container is created
 4. Reopen the project in a VSCode Dev Container by pressing `Ctrl+Shift+P` or `Cmd+Shift+P`. Wait for everything to be installed. It should be finished when you see a message in the terminal asking you to press any button to terminate. Once you see the message, press any button or open a new terminal. 
 5. Running
 ```
@@ -138,7 +138,12 @@ Running the built binary: Calling run just executes the program. In contrast, th
 ./hello
 ```
 
-## Final Steps
-
+## Final Steps: Pushing to a Repo
+1. In your terminal, type
+```
+git add .
+git commit -m "Final Hello World Project"
+git push -u origin main
+```
 
 Congratulations! You are done!
