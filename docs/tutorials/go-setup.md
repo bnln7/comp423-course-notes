@@ -32,7 +32,8 @@ git init
 ```
 4. Create a README file:
 ```
-echo "[Go Tutorial](https://bnln7.github.io/comp423-course-notes/)">README.md
+echo "[Go Tutorial](https://<github-username-here>.github.io/comp423-course-notes/)">README.md
+echo "Navigate to tutorials in the menu on the website to see the Go Tutorial.">>README.md
 git add README.md
 git commit -m "Initial commit with README"
 
@@ -47,7 +48,7 @@ git commit -m "Initial commit with README"
     * Click `Create Repository`
 
 ### Link your Local Repository Github
-1. Add the Github repository as a remote:
+1. In your termnial, add the Github repository as a remote:
 ```
 git remote add origin https://github.com/<your-username>/go-hello-world-project.git
 ```
@@ -62,7 +63,7 @@ git push --set-upstream origin main
 
 ## Creating a New Dev Container
 ### Add Development Container Configuration
-1. In VS Code, open the `hello` directory. You can do this via: File > Open Folder.
+1. Open Docker and then open VS Code. In VS Code, open the `hello` directory. You can do this via: File > Open Folder.
 2. Install the **Dev Containers** extension for VS Code. Do so by navigating to the left side and clicking the option with the 4 squares (the extensions option). In the search bar, type Dev Containers. Of the options that appear, click install for the one that says "Dev Containers" by Microsoft.
 3. At the root of the project (`hello`), create a new directory labelled `.devcontainer`. Inside this newly created directory, create a new file labelled `devcontainer.json`. The `devcontainer.json` file defines the configuration for your development environment. In this file, write the following to create the correct environment for your program.
 ```
@@ -91,14 +92,20 @@ go version
 should check that recent version of Go is being used.
 
 ## Initializing/Doing the Project
-1. Change to your directory. Example:
+1. Change to the directory you created if not already in it. Type 
+```
+pwd
+```
+into the terminal to check. If the end of the output is not the name of your directory, change directories. For example, if you are in the parent directory of `hello`, you would type:
+Example:
 ```
 cd hello
 ```
 
+
 2. Enable dependency tracking for your code by typing this in the terminal of your editor:
 ```
-$ go mod init example/hello
+go mod init example/hello
 ```
 Doing so should result in this output:
 ```
