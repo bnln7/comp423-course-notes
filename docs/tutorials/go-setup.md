@@ -32,8 +32,8 @@ git init
 ```
 4. Create a README file:
 ```
-echo "[Go Tutorial](https://<github-username-here>.github.io/comp423-course-notes/)">README.md
-echo "Navigate to tutorials in the menu on the website to see the Go Tutorial.">>README.md
+echo "[Go Tutorial](https://<your-github-username-here>.github.io/comp423-course-notes/tutorials/go-setup/)">README.md
+echo "Navigate to tutorials in the menu on the website to see the Go Tutorial if necessary.">>README.md
 git add README.md
 git commit -m "Initial commit with README"
 
@@ -48,7 +48,7 @@ git commit -m "Initial commit with README"
     * Click `Create Repository`
 
 ### Link your Local Repository Github
-1. In your termnial, add the Github repository as a remote:
+1. In your terminal, add the Github repository as a remote:
 ```
 git remote add origin https://github.com/<your-username>/go-hello-world-project.git
 ```
